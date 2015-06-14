@@ -1,0 +1,28 @@
+{
+  "name": "CallForPaper",
+  "version": "0.1.0",
+  "description": "web prototype",
+  "main": "public/js/transaction.main.js",
+  "keywords": [
+    "CFP"
+  ],
+  "authors": [
+    "Kanin Chotvorrarak"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.scp.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "bootstrap-sass": "~3.3.2",
+    "qunit": "~1.15.0",
+    "animate.css": "~3.2.1"
+  }
+}

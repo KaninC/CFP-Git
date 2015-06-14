@@ -1,0 +1,187 @@
+
+@import "../../../public/components/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+@import "template.scss";
+
+/*
+ * hero
+ */
+ section#hero {
+
+ 	.content{
+ 		color: white;
+ 		padding-top: 100px;
+ 		margin: 0;
+ 		width: 100%;
+ 		vertical-align: center;
+ 		
+ 		@include make-xs-column(12);
+
+
+ 		h1, p {
+ 			@extend .text-center;
+ 		}
+
+ 		h1 {
+ 			margin-top: 0px;
+ 		}
+
+ 		p {
+ 			font-family: 'dinot-italic', 'rsulight';
+ 		}
+
+ 	}
+ }
+
+
+ .container.quotes {
+ 	background-color: rgba(190, 190, 190, 0.7);
+ 	.wrapper {
+ 		@include make-row();
+ 		.content {
+ 			@include make-xs-column(12);
+ 			h2 {
+ 				/*height: 192px;*/
+ 				color: black;
+ 				padding-top: 60px;
+ 				padding-bottom: 60px;
+ 				@extend .text-center;
+ 			}
+ 		}
+ 	}
+ }
+
+ .container.faqs {
+ 	padding-top: 60px;
+ 	padding-bottom: 30px;
+ 	background-color: rgb(38, 38, 38);
+
+ 	section#faqs {
+ 		color: rgb(217, 217, 217);
+
+ 		h3 {
+ 			font-family: 'rsubold';
+ 			margin-bottom: 3px;
+ 		}
+
+ 		p {
+ 			font-size: 13px;
+ 		}
+
+ 		.wrapper {
+ 			@include make-row();
+ 			.content {
+ 				@include make-xs-column(12);
+ 				@include make-sm-column(4);
+ 			}
+ 		}
+ 	}
+ }
+
+/*
+ * products
+ */
+ $content-color: rgba(190, 190, 190, 0.8);
+
+ section#products {
+
+ 	h1 {
+ 		color: black;
+ 	}
+
+ 	.top-buffer { 
+ 		@include make-row();
+ 		margin-top:20px; 
+ 	}
+
+ 	.products {
+ 		@include make-row();
+
+ 		.inner {
+ 			@include make-xs-column(12);
+ 			@include make-sm-column(4);
+
+ 			.wrapper {
+ 				@include make-row();
+
+ 				.content {
+ 					@include make-xs-column(12);
+ 					.product {
+ 						border: 1px solid black;
+ 						.detail {
+ 							background-color: white;
+ 							padding: 14px 0 4px 25px;
+ 							border-top: 1px solid rgba(230, 230, 230, 1);
+ 						}
+
+ 					}
+
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+
+ /*
+	* contact
+	*/
+	section#contact {
+		h1 {
+			color: black;
+		}
+
+		.card {
+			color: black;
+			padding-top: 5px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			background-color: rgba(255, 255, 255, 0.7)
+		}
+
+		.google-maps {
+			position: relative;
+			padding-bottom: 40%; // This is the aspect ratio
+			height: 0;
+			overflow: hidden;
+
+			iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 80% !important;
+				height: 80% !important;
+			}
+		}
+
+		.phone, .fax, .email, .indent {
+			padding-left: 20px;
+		}
+
+		.bold{
+			font-weight: bold;
+		}
+
+		.top-buffer { 
+			margin-top: 20px; 
+		}
+	}
+
+ /*
+	* footer
+	*/
+	section#footer {
+
+		margin-top: 60px;
+
+		p {
+			color: black;
+			font-size: 12px;
+			@extend .text-center;
+		}
+
+		@media (min-width: $screen-sm-min) {
+			p {
+				font-size: 16px;
+			}
+		}
+	}
