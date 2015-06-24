@@ -13,10 +13,13 @@
 					</div>
 				</div>
 			</div>
+			@if ( isset($committee['02']) )
 			<div class="col-xs-12 visible-xs top-buffer"></div>
+			@endif
 			<div class="inner">
 				<div class="wrapper">
 					<div class="content">
+						@if ( isset($committee['02']) )
 						<div class="product">
 							<div class="img">
 								<img src="/img/committee/{{ $committee['02']['img'] }}" style="width:100%;" class="img-responsive" />
@@ -25,6 +28,7 @@
 								<p class="text-left">{{ $committee['02']['name'] }}</p>
 							</div>
 						</div>
+						@endif
 					</div>
 				</div>
 			</div>

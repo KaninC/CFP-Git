@@ -8,12 +8,12 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{{ URL::to('/') }}">ยืนดีต้อนรับ</a>
+			<a class="navbar-brand" href="{{ URL::to('/') }}">ยินดีต้อนรับ</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-left">
 				<li><a href="{{ URL::to('/home') }}">หน้าหลัก</a></li>
-				<li><a href="{{ URL::to('/status') }}">ขั้นตอนการดำเนินงานบทความ</a></li>
+				<li><a href="{{ URL::to('/status') }}">รายชื่อบทความที่นำเสนอในงานประชุม</a></li>
 				<li><a href="{{ URL::to('/committees') }}">ผู้เกี่ยวข้อง</a></li>
 				<li><a href="{{ URL::to('/document') }}">เอกสารของโครงการ</a></li>
 				<li><a href="{{ URL::to('/poster') }}">โปสเตอร์</a></li>

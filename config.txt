@@ -1,0 +1,4 @@
+Host sgp
+HostName 52.74.233.255
+User ubuntu
+IdentityFile E:\Extra-Work\CallForPaper\keypair-cfp.pem.txt
